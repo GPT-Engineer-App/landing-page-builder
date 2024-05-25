@@ -24,11 +24,11 @@ const Index = () => {
 
       {/* Hero Section */}
       <Box as="section" bg="gray.100" py={20} textAlign="center">
-        <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+        <Grid templateColumns="repeat(2, 1fr)" gap={0} position="relative">
           <Image src="https://via.placeholder.com/600x400" alt="Visual 1" borderRadius="md" />
           <Image src="https://via.placeholder.com/600x400" alt="Visual 2" borderRadius="md" />
         </Grid>
-        <VStack spacing={6} mt={10}>
+        <VStack spacing={6} mt={10} position="absolute" top="50%" left="50%" transform="translate(-50%, -50%)" zIndex="1" color="white">
           <Heading size="2xl">こんにちは</Heading>
           <Text fontSize="lg">Xin chào</Text>
           <Text fontSize="lg">TECH×Human Resourceであなたのビジネスを加速させます（顔文字）</Text>
