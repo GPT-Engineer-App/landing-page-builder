@@ -1,4 +1,4 @@
-import { Container, Box, VStack, HStack, Text, Button, Heading, IconButton, Image, Input, Textarea, FormControl, FormLabel } from "@chakra-ui/react";
+import { Container, Box, VStack, HStack, Text, Button, Heading, IconButton, Image, Input, Textarea, FormControl, FormLabel, Grid } from "@chakra-ui/react";
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Index = () => {
@@ -24,12 +24,14 @@ const Index = () => {
 
       {/* Hero Section */}
       <Box as="section" bg="gray.100" py={20} textAlign="center">
-        <VStack spacing={6}>
-          <Heading size="2xl">Welcome to MyCompany</Heading>
-          <Text fontSize="lg">We provide the best solutions for your business.</Text>
-          <Button colorScheme="teal" size="lg">
-            Get Started
-          </Button>
+        <Grid templateColumns="repeat(2, 1fr)" gap={6}>
+          <Image src="https://via.placeholder.com/600x400" alt="Visual 1" borderRadius="md" />
+          <Image src="https://via.placeholder.com/600x400" alt="Visual 2" borderRadius="md" />
+        </Grid>
+        <VStack spacing={6} mt={10}>
+          <Heading size="2xl">こんにちは</Heading>
+          <Text fontSize="lg">Xin chào</Text>
+          <Text fontSize="lg">TECH×Human Resourceであなたのビジネスを加速させます（顔文字）</Text>
         </VStack>
       </Box>
 
